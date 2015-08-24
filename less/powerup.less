@@ -393,7 +393,7 @@ h2 {
 		span{
 					text-transform:uppercase;
 					font-size:18px;
-				}
+			}
 }
 
 /*mixin for custom panel styling*/
@@ -439,7 +439,7 @@ background-color:@bg-color;
 #home-development {
 	.section-style(@brand-primary;white;white);
 	h1, h2, h3, h4, h5, h6, p, ul, ol, li {color:white;}
-  .panel {.panel-style(#d6d6d6;)}
+  	.panel {.panel-style(#d6d6d6;)}
 	
 }
 #home-school {
@@ -448,7 +448,9 @@ background-color:@bg-color;
 #footer-inspiration {
 	.section-style(@gray;@gray-darker;@gray-darker);
 }
-
+#footer-contact {
+	.section-style(@gray-darker;@gray-lighter;@gray-darker);
+}
 .no-float {
 	float:none;
 }
