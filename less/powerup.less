@@ -456,3 +456,23 @@ background-color:@bg-color;
 	float:none;
 }
 
+.light-orange {
+	.section-style(white;@brand-warning;@gray-dark);
+}
+.light-green {
+	.section-style(white;@brand-success;@gray-dark);
+}
+.light-gray {
+	.section-style(@gray;@gray-darker;@gray-darker);
+}
+.dark-gray {
+	.section-style(@gray-dark;@gray-lighter;@gray-darker);
+	p {color:white;} 
+}
+.dark-blue {
+	.section-style(@brand-primary;white;white);
+	h1, h2, h3, h4, h5, h6, p, ul, ol, li {color:white;}
+  	.panel {.panel-style(#d6d6d6;)}
+}
+
+
