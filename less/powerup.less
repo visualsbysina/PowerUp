@@ -387,6 +387,10 @@
 @hr-border: @gray-lighter;
 
 /*Powerup Custom Styles*/
+
+@brand-blue:#07788a;
+@brand-orange:#f08330;
+@brand-green:#6dc297;
  
 
 h2 {
@@ -397,11 +401,11 @@ h2 {
 }
 
 /*mixin for custom panel styling*/
-.panel-style (@panel-edge-color){
+.panel-style (@panel-border-color){
 	background-color:transparent;
-	border: 5px solid @panel-edge-color;
+	border: 5px solid @panel-border-color;
 	.panel-footer {
-		background-color:@panel-edge-color;
+		background-color:@panel-border-color;
 		border-top:0;
 		border-radius:0;
 		}
@@ -431,7 +435,7 @@ background-color:@bg-color;
 	background-image: url("https://images.unsplash.com/photo-1437240443155-612416af4d5a?fit=crop&fm=jpg&h=1575&q=80&w=1050");
 }
 #home-classroom {
-	.section-style(white;@brand-warning;@gray-dark);
+	.section-style(white;@brand-orange;@gray-dark);
 }
 #home-strategies {
 	.section-style(@gray;@gray-darker;@gray-darker);
@@ -443,7 +447,7 @@ background-color:@bg-color;
 	
 }
 #home-school {
-	.section-style(white;@brand-success;@gray-dark);
+	.section-style(white;@brand-green;@gray-dark);
 }
 #footer-inspiration {
 	.section-style(@gray;@gray-darker;@gray-darker);
@@ -460,14 +464,15 @@ background-color:@bg-color;
 	.section-style(white;@brand-warning;@gray-dark);
 }
 .light-green {
-	.section-style(white;@brand-success;@gray-dark);
+	.section-style(white;@brand-green;@gray-dark);
 }
 .light-gray {
 	.section-style(@gray-light;@gray-darker;@gray-darker);
 }
 .dark-gray {
-	.section-style(@gray-dark;@gray-lighter;@gray-darker);
+	.section-style(@#ebebeb;#464646;#464646);
 	p {color:white;} 
+	.panel {.panel-style(#7d7d7d;)}
 }
 .dark-blue {
 	.section-style(@brand-primary;white;white);
