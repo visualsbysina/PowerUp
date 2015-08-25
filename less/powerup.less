@@ -419,12 +419,12 @@ h2 {
 }
 
 /*mixin for styling a section*/
-.section-style(@bg-color,@h2-color,@span-color) {
+.section-style(@bg-color,@h2-color,@accent-color) {
 background-color:@bg-color;
 	h2 {	
 			color: @h2-color;
 				span {
-							color:@span-color;
+							color:@accent-color;
 				}
 			}
 	ul  {
@@ -448,7 +448,7 @@ background-color:@bg-color;
 	p {color:#ffffff;} 
 }
 .dark-blue {
-	.section-style(@brand-primary;white;white);
+	.section-style(#636363;white;white);
 	h1, h2, h3, h4, h5, h6, p, ul, ol, li {color:white;}
   	.panel {.panel-style(#d6d6d6;#464646)}
 }
