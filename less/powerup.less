@@ -405,9 +405,7 @@ h2 {
 
 ul li:before {
 	list-style:none; /* if you’re not already using a reset */
-    color: #EA8B0D;
     font-family: sans-serif;
-    content: "\⚬";
     font-size: 2.5em;
     padding-right: 7px;
     position: relative;
@@ -438,9 +436,10 @@ background-color:@bg-color;
 							color:@accent-color;
 				}
 			}
-	ul  {
+	ul li:before {
 			list-style: circle outside;
 			color:@accent-color;
+			content: "\⚬";
 	}
 }
 
