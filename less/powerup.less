@@ -391,7 +391,10 @@
 @brand-blue:#07788a;
 @brand-orange:#f08330;
 @brand-green:#6dc297;
- 
+
+.no-float {
+	float:none;
+} 
 
 h2 {
 		span{
@@ -430,35 +433,6 @@ background-color:@bg-color;
 }
 
 /*calling .section-style mixin and defining section styles*/
-#home-top {
-	.section-style(transparent;white;white);
-	h1 {color:@brand-primary};
-	background-image: url("https://images.unsplash.com/photo-1437240443155-612416af4d5a?fit=crop&fm=jpg&h=1575&q=80&w=1050");
-}
-#home-classroom {
-	.section-style(white;@brand-orange;@gray-dark);
-}
-#home-strategies {
-	.section-style(@gray;@gray-darker;@gray-darker);
-}
-#home-development {
-	.section-style(@brand-primary;white;white);
-	h1, h2, h3, h4, h5, h6, p, ul, ol, li {color:white;}	
-}
-#home-school {
-	.section-style(white;@brand-green;@gray-dark);
-}
-#footer-inspiration {
-	.section-style(@gray;@gray-darker;@gray-darker);
-}
-#footer-contact {
-	.section-style(@gray-dark;@gray-lighter;@gray-darker);
-	p {color:white;} 
-}
-.no-float {
-	float:none;
-}
-
 .light-orange {
 	.section-style(white;@brand-warning;@gray-dark);
 }
@@ -478,5 +452,11 @@ background-color:@bg-color;
 	h1, h2, h3, h4, h5, h6, p, ul, ol, li {color:white;}
   	.panel {.panel-style(#d6d6d6;#464646)}
 }
+#home-top {
+	.section-style(transparent;white;white);
+	h1 {color:@brand-primary};
+	background-image: url("https://images.unsplash.com/photo-1437240443155-612416af4d5a?fit=crop&fm=jpg&h=1575&q=80&w=1050");
+}
+
 
 
